@@ -115,19 +115,9 @@ header{
     color: black;
 }
 /*SECTION*/
-
-/*Publicidad*/
-.publicidad{
-    border: solid 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #c4c4c4;
-}
-.imagen-publicidad{
-    display: flex;
-    margin: 10px;
-    width: 40%;
+.carousel-publicidad{
+    width: 60%;
+    margin: 3px auto;
 }
 /* cajas de ventas */
 .articulos{
@@ -139,33 +129,36 @@ header{
 .titulo-cajas{
     display: flex;
     justify-content: center;
-    background-color: rgb(138, 135, 135);
-    padding: 5px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 .articulo-1{
     display: flex;
     justify-content: space-around ;
-    background-color: #a7c2fc;
+    background-color: rgb(196, 194, 194);
 }
 .cajas{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border: 2px solid black;
     margin: 10px ;
     width: 150px;
     height: 200px;
-    background-color: #c4c4c4;
+    background-color: black;
 }
 .cajas h3{
     display: flex;
     justify-content: center;
     font-size: 16px;
     border-bottom: solid 1px black;
+    color: white;
 }
 .cajas img{
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 50%;
 }
 .cajas p{
     display: flex;
@@ -174,6 +167,7 @@ header{
     border-top: solid 1px black;
     border-bottom: solid 1px black;
     padding: 5px;
+    color: white;
 }
 
 /*FOOTER*/
@@ -453,7 +447,7 @@ footer ul li a:hover{
 }
 
 /* -------------- MEDIA QUERIES TABLET -------------- */    
-@media only screen and (max-width: 850px) and (min-width: 370px) {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
             /*Headers*/
     header{
         height: 240px;
@@ -500,7 +494,7 @@ footer ul li a:hover{
  }
 /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 400px){
 
     /*ENCABEZADO*/
         /*Encabezado principal*/
@@ -558,6 +552,11 @@ footer ul li a:hover{
     /*FOOTER*/
     footer ul li a{
         font-size: 10px;
+    }
+    .articulo-1{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(196, 194, 194);
     }
 }
 
