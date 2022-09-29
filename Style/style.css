@@ -178,28 +178,43 @@ header{
 
 /*FOOTER*/
 footer{
-    padding: 20px;
-    background-color: #bacc6c;
+    background: linear-gradient(rgb(213, 213, 231), rgb(99, 80, 206));
     width: 100%;
     display: flex;
+    align-items: center;
+    height: 250px;
+}
+footer ul{
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-around;
+    width: 310px;
+    height: 230px;
+    margin: auto auto;
 }
-footer div{
-    margin: 5px;
+footer ul li{
     display: flex;
-    align-items: center;
+    margin: 3px;
+    width: 90%;
+    height: 35px;
 }
-footer div img{
-    margin-right: 10px;
+footer ul li a{
     display: flex;
-    height: 30px;
-    width: 30px;
-}
-footer div p{
+    width: 100%;
+    padding: 2px;
+    text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
+    font-size: 14px;
+    color: black;
+}
+footer ul li a img{
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+}
+footer ul li a:hover{
+    color: red;
 }
 /*---------------------Nosotros---------------------*/
 .nosotros{
@@ -486,9 +501,11 @@ footer div p{
 /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 
 @media only screen and (max-width: 370px){
-    /*Encabezado principal*/
+
+    /*ENCABEZADO*/
+        /*Encabezado principal*/
     header {
-        height: 280px;
+        height: 320px;
     }
     .encabezado{
         display: grid;
@@ -527,12 +544,21 @@ footer div p{
          /*Barra de navegacion*/
     .nav{
         display: flex;
-        height: 100%;
-        border: solid 2px white;
+        justify-content: space-around;
     }
     .ul-nav{
         display: flex;
         flex-direction: column;
+        margin: 2px auto;
+    }
+    .nav .ul-nav li a{
+        width: 140px;
+        font-size: 12px;
+    }
+    /*FOOTER*/
+    footer ul li a{
+        font-size: 10px;
     }
 }
+
    
