@@ -7,69 +7,145 @@ header {
   grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 180px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+  /*Encabezado principal*/
+  /*Barra de navegacion*/
 }
-
-/*Encabezado principal*/
-.encabezado {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header {
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header {
+    height: 320px;
+  }
+}
+header .encabezado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+  /* imagen logo */
+  /*titulo principal*/
+  /* Lista de redes */
+  /*acceso a ingresar*/
 }
-
-/* imagen logo */
-.logo-kiosquito {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .encabezado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 60px;
+  }
+}
+header .encabezado .logo-kiosquito {
   display: grid;
   grid-column: 1/2;
   margin: auto auto;
   width: auto;
   max-height: 100px;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.logo-kiosquito img {
+header .encabezado .logo-kiosquito img {
   max-height: 94px;
   width: auto;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-/*titulo principal*/
-.titulo {
+@media only screen and (max-width: 400px) {
+  header .encabezado .logo-kiosquito img {
+    max-height: 94px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado .logo-kiosquito {
+    display: grid;
+    grid-column: 1/2;
+    margin: auto auto;
+    width: auto;
+    max-height: 100px;
+  }
+}
+header .encabezado .titulo {
   display: grid;
   grid-column: 2/4;
 }
-
-.titulo-principal {
+header .encabezado .titulo .titulo-principal {
   margin: auto 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 36px;
   max-width: 300px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-/* Lista de redes */
-.redes {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .encabezado .titulo .titulo-principal {
+    display: grid;
+    grid-column: 2/4;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado .titulo .titulo-principal {
+    font-size: 16px;
+    display: grid;
+    grid-column: 2/4;
+    text-align: center;
+  }
+}
+header .encabezado .redes {
   display: grid;
   list-style-type: none;
   grid-column: 4/6;
   grid-template-columns: 1fr 1fr 1fr;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.redes li {
+header .encabezado .redes li {
   display: flex;
   margin: 1 auto;
 }
-
-.redes li img {
+header .encabezado .redes li img {
   margin: auto;
   width: 30px;
   height: 30px;
 }
-
-/*acceso a ingresar*/
-.ingresar {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .encabezado .redes {
+    display: grid;
+    list-style-type: none;
+    grid-column: 1/3;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado .redes {
+    display: grid;
+    list-style-type: none;
+    grid-column: 1/3;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+header .encabezado .ingresar {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.ingresar button {
+header .encabezado .ingresar button {
   height: 40px;
   min-width: 100px;
   border: solid 2px black;
@@ -78,29 +154,54 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: radial-gradient(circle, rgb(241, 241, 241) 36%, rgb(220, 220, 227) 57%, rgb(181, 181, 181) 100%);
 }
-
-/*Barra de navegacion*/
-.nav {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .encabezado .ingresar {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado .ingresar {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+}
+header .nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column: 1/6;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.ul-nav {
+@media only screen and (max-width: 400px) {
+  header .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+header .nav .ul-nav {
   display: grid;
   grid-column: 1/6;
   width: 100%;
   align-items: center;
   text-align: center;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.nav .ul-nav li {
+@media only screen and (max-width: 400px) {
+  header .nav .ul-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+  }
+}
+header .nav .ul-nav li {
   height: 80%;
   display: grid;
   grid-row: 1/2;
+  /*Transformaciones*/
 }
-
-.nav .ul-nav li a {
+header .nav .ul-nav li a {
   text-decoration: none;
   outline: none;
   padding: 3px;
@@ -113,123 +214,53 @@ header {
   border-radius: 15px;
   background: radial-gradient(circle, rgb(241, 241, 241) 36%, rgb(220, 220, 227) 57%, rgb(181, 181, 181) 100%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-
-.nav .ul-nav li a:hover {
-  border: solid 3px black;
-  zoom: 1.2;
-}
-
-.nav .ul-nav li a:visited { /*estilo para enlaces visitados*/
-  color: red;
-}
-
-.nav .ul-nav li a:link { /*estilo para enlaces NO visitados*/
-  color: black;
-}
-
-/* -------------- MEDIA QUERIES TABLET -------------- */
 @media only screen and (max-width: 850px) and (min-width: 400px) {
-  /*Headers*/
-  header {
-    height: 240px;
-  }
-  /*Encabezado principal*/
-  .encabezado {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 40px;
-  }
-  .titulo-principal {
-    display: grid;
-    grid-column: 2/4;
-    font-size: 30px;
-    text-align: center;
-  }
-  .redes {
-    display: grid;
-    list-style-type: none;
-    grid-column: 1/3;
-    grid-row: 2;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .ingresar {
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 2;
-  }
-  /*Barra de navegacion*/
-  .nav .ul-nav li a {
+  header .nav .ul-nav li a {
     width: 70px;
     font-size: 10px;
   }
-  .nav .ul-nav li a:hover {
-    border: solid 3px black;
-    zoom: 1.2;
-  }
-  .nav .ul-nav li a:visited { /*estilo para enlaces visitados*/
-    color: red;
-  }
-  .nav .ul-nav li a:link { /*estilo para enlaces NO visitados*/
-    color: black;
-  }
 }
-/*------------ MEDIA QUERIES SMARTPHONE -----------*/
 @media only screen and (max-width: 400px) {
-  /*ENCABEZADO*/
-  /*Encabezado principal*/
-  header {
-    height: 320px;
-  }
-  .encabezado {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 60px;
-  }
-  .logo-kiosquito {
-    display: grid;
-    grid-column: 1/2;
-    margin: auto auto;
-    width: auto;
-    max-height: 100px;
-  }
-  .logo-kiosquito img {
-    max-height: 94px;
-    width: auto;
-  }
-  .titulo-principal {
-    font-size: 16px;
-    display: grid;
-    grid-column: 2/4;
-    text-align: center;
-  }
-  .redes {
-    display: grid;
-    list-style-type: none;
-    grid-column: 1/3;
-    grid-row: 2;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .ingresar {
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 2;
-  }
-  /*Barra de navegacion*/
-  .nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  .ul-nav {
-    display: flex;
-    flex-direction: column;
-    margin: 2px auto;
-  }
-  .nav .ul-nav li a {
+  header .nav .ul-nav li a {
     width: 140px;
     font-size: 12px;
   }
 }
+header .nav .ul-nav li a:hover {
+  border: solid 3px black;
+  zoom: 1.2;
+  /*REVISAR SI ESTA DE MAS EL MEDIA QUERIES*/
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .nav .ul-nav li a:hover {
+    border: solid 3px black;
+    zoom: 1.2;
+  }
+}
+header .nav .ul-nav li a:visited { /*estilo para enlaces visitados*/
+  color: red;
+  /*REVISAR SI ESTA DE MAS EL MEDIA QUERIES*/
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .nav .ul-nav li a:visited {
+    color: red;
+  }
+}
+header .nav .ul-nav li a:link { /*estilo para enlaces NO visitados*/
+  color: black;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  header .nav .ul-nav li a:link {
+    color: black;
+  }
+}
+
 /*RESETEO DE ESTILOS*/
 * {
   margin: 0;
