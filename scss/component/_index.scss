@@ -1,71 +1,73 @@
 /*---------------------INDEX---------------------*/
 
 /*SECTION*/
-.carousel-publicidad{
-    width: 60%;
-    margin: 3px auto;
-}
-/* cajas de ventas */
-.articulos{
-    display: flex;
-    border: solid 1px black;
-    flex-direction: column;
-    justify-content: center;
-}
-.titulo-cajas{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-.articulo-1{
-    display: flex;
-    justify-content: space-around ;
-    background-color: rgb(196, 194, 194);
-}
-.cajas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    margin: 10px ;
-    width: 150px;
-    height: 200px;
-    background-color: black;
-}
-.cajas h3{
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    border-bottom: solid 1px black;
-    color: white;
-}
-.cajas img{
-    display: flex;
-    width: auto;
-    height: 50%;
-}
-.cajas p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-    padding: 5px;
-    color: white;
-}
+section{
 
-
-
-/*------------ MEDIA QUERIES SMARTPHONE -----------*/
-
-@media only screen and (max-width: 400px){
-
-    /* MENU INDEX */
-    .articulo-1{
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(196, 194, 194);
+    .carousel-publicidad{
+        width: 60%;
+        margin: 3px auto;
     }
+    .articulos{
+        display: flex;
+        border: solid 1px black;
+        flex-direction: column;
+        justify-content: center;
+
+        .titulo-cajas{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .articulo-1{
+            display: flex;
+            justify-content: space-around ;
+            background-color: rgb(196, 194, 194);
+
+            @media only screen and (max-width: 400px){
+                .articulo-1{
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: rgb(196, 194, 194);
+                }
+            }
+
+            .cajas{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid black;
+                margin: 10px ;
+                width: 150px;
+                height: 200px;
+                background-color: black;
+
+                h3{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 16px;
+                    border-bottom: solid 1px black;
+                    color: white;
+                }
+
+                img{
+                    display: flex;
+                    width: auto;
+                    height: 50%;
+                }
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: solid 1px black;
+                    border-bottom: solid 1px black;
+                    padding: 5px;
+                    color: white;
+                }                
+            }
+        }
+    }
+    
 }
