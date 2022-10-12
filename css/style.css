@@ -635,8 +635,7 @@ section .articulos .articulo-1 .cajas p {
   justify-content: center;
   background-color: #8f2424;
 }
-
-.seccion-registrarse {
+.main-registrarse .seccion-registrarse {
   width: 75%;
   margin: 10px;
   background-image: url(../Imagenes/Local-interior.jpg);
@@ -644,8 +643,7 @@ section .articulos .articulo-1 .cajas p {
   justify-content: center;
   border: solid 1px black;
 }
-
-.formulario {
+.main-registrarse .seccion-registrarse .formulario {
   margin: 30px;
   border: solid 1px black;
   border-radius: 10px;
@@ -654,24 +652,18 @@ section .articulos .articulo-1 .cajas p {
   flex-direction: column;
   background-color: #c4c4c4;
 }
-
-.caja-input {
+.main-registrarse .seccion-registrarse .formulario .caja-input {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-}
-
-.caja-input {
   margin: 10px;
   font-weight: bold;
 }
-
-.caja-input input {
+.main-registrarse .seccion-registrarse .formulario .caja-input input {
   margin-left: 10px;
 }
-
-.enviar-formulario {
+.main-registrarse .seccion-registrarse .formulario .enviar-formulario {
   display: flex;
   justify-content: center;
   align-items: center;
