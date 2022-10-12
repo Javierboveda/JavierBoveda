@@ -5,135 +5,147 @@
     flex-direction: column;
     background-color: #c4c4c4;
     margin: 10px;
-}
-.contenedor-buscador{
-    display: flex;
-    margin: 30px;
-    justify-content: center;
-}
-.buscador{
-    border: solid 2px;
-    border-radius: 10px;
-    height: 40px;
-    width: 30%;
-    text-align: center;
-}
-.seccion-compra-productos{
-    display: flex;
-    border: solid 3px black;
-    flex-direction: column;
-    margin: 30px;
-    padding: 20px;
-    align-items: center;
-    background-color: #e4e1e1; 
-}
-.caja-compra-productos{
-    background-color: rgb(178, 210, 224);
-    display: flex;
-    justify-content: space-around;
-    border: solid 1px black;
-    width: 90%;
-    height: 50px;
-    padding: 5px;
-    margin: 3px;
-}
-.img-compra-productos{
-    display: flex;
-    border: solid 1px black;
-    width: 60px;
-}
-.img-compra-productos img{
-    width: 100%;
-}
-.nombre-compra-productos{
-    display: flex;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.cant-bulto-compra-productos{
-    display: flex;
-    border-right: solid 1px black;
-    width: auto;
-    padding: 3px;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.cant-unidad-compra-productos{
-    display: flex;
-    border-right: solid 1px black;
-    width: auto;
-    padding: 3px;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.disponible-compra-productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    border: solid 2px green;
-    background-color: rgb(106, 161, 106);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.no-disponible-compra-productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    border: solid 2px red;
-    background-color: rgb(229, 153, 153);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.selector-compra-productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.selector-unidad-compra{
-    display: flex;
-}
-.input-compra-productos{
-    display: flex;
 
-    justify-content: center;
+    .contenedor-buscador{
+        display: flex;
+        margin: 30px;
+        justify-content: center;
 
-    max-width: 40px;
+        .buscador{
+            border: solid 2px;
+            border-radius: 10px;
+            height: 40px;
+            width: 30%;
+            text-align: center;
+        }
+    }
+    .seccion-compra-productos{
+        display: flex;
+        border: solid 3px black;
+        flex-direction: column;
+        margin: 30px;
+        padding: 20px;
+        align-items: center;
+        background-color: #e4e1e1; 
+
+        .caja-compra-productos{
+            background-color: rgb(178, 210, 224);
+            display: flex;
+            justify-content: space-around;
+            border: solid 1px black;
+            width: 90%;
+            height: 50px;
+            padding: 5px;
+            margin: 3px;
+
+            .img-compra-productos{
+                display: flex;
+                border: solid 1px black;
+                width: 60px;
+
+                img{
+                    width: 100%;
+                }
+            }
+            .nombre-compra-productos{
+                display: flex;
+                width: 200px;
+                align-items: center;
+                justify-content: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .cant-bulto-compra-productos{
+                display: flex;
+                border-right: solid 1px black;
+                width: auto;
+                padding: 3px;
+                align-items: center;
+                justify-content: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .cant-unidad-compra-productos{
+                display: flex;
+                border-right: solid 1px black;
+                width: auto;
+                padding: 3px;
+                align-items: center;
+                justify-content: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .disponible-compra-productos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3px;
+                border: solid 2px green;
+                background-color: rgb(106, 161, 106);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .no-disponible-compra-productos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3px;
+                border: solid 2px red;
+                background-color: rgb(229, 153, 153);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .selector-compra-productos{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .selector-unidad-compra{
+                    display: flex;
+                }
+            }
+            .input-compra-productos{
+                display: flex;
+                justify-content: center;
+                max-width: 40px;
+
+                input{
+                    max-width: 100%;
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border: solid 2px black;
+                }
+            }
+            .precio-compra-productos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+            }
+            .img-carrito{
+                display: flex;
+                width: 100px;
+                
+                button{
+                    img{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                    }
+                } 
+            }
+
+        }
+        
+    }
 }
-.input-compra-productos input{
-    max-width: 100%;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    border: solid 2px black;
-}
-.precio-compra-productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-.img-carrito{
-    display: flex;
-    width: 100px;
-}
-.img-carrito button img{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
+
+

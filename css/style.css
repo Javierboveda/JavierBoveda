@@ -499,22 +499,19 @@ section .articulos .articulo-1 .cajas p {
   background-color: #c4c4c4;
   margin: 10px;
 }
-
-.contenedor-buscador {
+.seccion-productos .contenedor-buscador {
   display: flex;
   margin: 30px;
   justify-content: center;
 }
-
-.buscador {
+.seccion-productos .contenedor-buscador .buscador {
   border: solid 2px;
   border-radius: 10px;
   height: 40px;
   width: 30%;
   text-align: center;
 }
-
-.seccion-compra-productos {
+.seccion-productos .seccion-compra-productos {
   display: flex;
   border: solid 3px black;
   flex-direction: column;
@@ -523,8 +520,7 @@ section .articulos .articulo-1 .cajas p {
   align-items: center;
   background-color: #e4e1e1;
 }
-
-.caja-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos {
   background-color: rgb(178, 210, 224);
   display: flex;
   justify-content: space-around;
@@ -534,18 +530,15 @@ section .articulos .articulo-1 .cajas p {
   padding: 5px;
   margin: 3px;
 }
-
-.img-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .img-compra-productos {
   display: flex;
   border: solid 1px black;
   width: 60px;
 }
-
-.img-compra-productos img {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .img-compra-productos img {
   width: 100%;
 }
-
-.nombre-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .nombre-compra-productos {
   display: flex;
   width: 200px;
   align-items: center;
@@ -554,8 +547,7 @@ section .articulos .articulo-1 .cajas p {
   font-size: 16px;
   font-weight: bold;
 }
-
-.cant-bulto-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .cant-bulto-compra-productos {
   display: flex;
   border-right: solid 1px black;
   width: auto;
@@ -566,8 +558,7 @@ section .articulos .articulo-1 .cajas p {
   font-size: 16px;
   font-weight: bold;
 }
-
-.cant-unidad-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .cant-unidad-compra-productos {
   display: flex;
   border-right: solid 1px black;
   width: auto;
@@ -578,8 +569,7 @@ section .articulos .articulo-1 .cajas p {
   font-size: 16px;
   font-weight: bold;
 }
-
-.disponible-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -590,8 +580,7 @@ section .articulos .articulo-1 .cajas p {
   font-size: 16px;
   font-weight: bold;
 }
-
-.no-disponible-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -602,24 +591,20 @@ section .articulos .articulo-1 .cajas p {
   font-size: 16px;
   font-weight: bold;
 }
-
-.selector-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
-.selector-unidad-compra {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra {
   display: flex;
 }
-
-.input-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .input-compra-productos {
   display: flex;
   justify-content: center;
   max-width: 40px;
 }
-
-.input-compra-productos input {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .input-compra-productos input {
   max-width: 100%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -627,21 +612,18 @@ section .articulos .articulo-1 .cajas p {
   font-weight: bold;
   border: solid 2px black;
 }
-
-.precio-compra-productos {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .precio-compra-productos {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
-
-.img-carrito {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito {
   display: flex;
   width: 100px;
 }
-
-.img-carrito button img {
+.seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button img {
   display: flex;
   width: 100%;
   height: 100%;
