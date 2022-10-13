@@ -683,6 +683,12 @@ section .articulos .articulo-1 .cajas p {
   justify-content: space-between;
   flex-direction: column;
   background-color: #c4c4c4;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .main-registrarse .seccion-registrarse .formulario {
+    width: 90%;
+  }
 }
 .main-registrarse .seccion-registrarse .formulario .caja-input {
   display: flex;
@@ -691,9 +697,29 @@ section .articulos .articulo-1 .cajas p {
   padding: 10px;
   margin: 10px;
   font-weight: bold;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .main-registrarse .seccion-registrarse .formulario .caja-input {
+    width: 90%;
+  }
 }
 .main-registrarse .seccion-registrarse .formulario .caja-input input {
   margin-left: 10px;
+}
+@media only screen and (max-width: 400px) {
+  .main-registrarse .seccion-registrarse .formulario .caja-input input {
+    width: 90%;
+    font-size: 10px;
+  }
+}
+.main-registrarse .seccion-registrarse .formulario .caja-input label {
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .main-registrarse .seccion-registrarse .formulario .caja-input label {
+    font-size: 12px;
+  }
 }
 .main-registrarse .seccion-registrarse .formulario .enviar-formulario {
   display: flex;

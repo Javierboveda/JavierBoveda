@@ -20,6 +20,10 @@
             justify-content: space-between;
             flex-direction: column;
             background-color: #c4c4c4;
+            /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+            @media only screen and (max-width: 400px){
+                width: 90%;
+            }
 
             .caja-input{
                 display: flex;
@@ -28,9 +32,24 @@
                 padding: 10px;
                 margin: 10px;
                 font-weight: bold;
+                /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+                @media only screen and (max-width: 400px){
+                    width: 90%;
+                }
 
                 input{
                     margin-left: 10px;
+                    @media only screen and (max-width: 400px){
+                        width: 90%;
+                        font-size: 10px;
+                    }
+                }
+                label{
+                    /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+                    @media only screen and (max-width: 400px){
+                        font-size: 12px;
+                    }
+
                 }
             }
             .enviar-formulario{
