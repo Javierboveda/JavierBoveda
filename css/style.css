@@ -545,36 +545,47 @@ section .articulos .articulo-1 .cajas p {
 }
 .seccion-productos .seccion-compra-productos {
   display: flex;
+  align-items: center;
   border: solid 3px black;
   flex-direction: column;
   margin: 30px;
   padding: 20px;
-  align-items: center;
   background-color: #e4e1e1;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos {
   background-color: rgb(178, 210, 224);
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   border: solid 1px black;
   width: 90%;
-  height: 50px;
-  padding: 5px;
+  height: 100px;
   margin: 3px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 250px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-compra-productos {
   display: flex;
-  border: solid 1px black;
-  width: 60px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px hsla(0deg, 77%, 44%, 0.788);
+  width: 80%;
+  height: 80px;
+  margin: auto auto;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-compra-productos img {
-  width: 100%;
+  height: 70px;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .nombre-compra-productos {
   display: flex;
-  width: 200px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -605,42 +616,90 @@ section .articulos .articulo-1 .cajas p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px;
+  height: 50%;
   border: solid 2px green;
   background-color: rgb(106, 161, 106);
+  margin: 10px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos {
+    width: 80px;
+    height: 30px;
+  }
+}
+.seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: bold;
+  align-items: center;
+  margin: auto auto;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos p {
+    font-size: 10px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px;
+  height: 50%;
   border: solid 2px red;
   background-color: rgb(229, 153, 153);
+  margin: 10px;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos {
+    width: 80px;
+    height: 30px;
+  }
+}
+.seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: bold;
+  align-items: center;
+  margin: auto auto;
+  /* -------------- MEDIA QUERIES TABLET -------------- */
+}
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos p {
+    font-size: 8px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 80%;
+  margin: 5px;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra {
   display: flex;
+  align-items: center;
+  height: 50%;
+}
+.seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra input {
+  margin: auto 2px;
+}
+.seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra p {
+  margin: auto auto;
+  font-size: 16px;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .input-compra-productos {
   display: flex;
   justify-content: center;
-  max-width: 40px;
+  align-items: center;
+  height: 100%;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .input-compra-productos input {
-  max-width: 100%;
+  max-width: 90%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   border: solid 2px black;
 }
@@ -653,12 +712,22 @@ section .articulos .articulo-1 .cajas p {
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito {
   display: flex;
-  width: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 80%;
+  width: 80%;
+}
+.seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button img {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: auto;
 }
 
 /*---------------------Registrarse---------------------*/
