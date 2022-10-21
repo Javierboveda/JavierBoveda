@@ -1,13 +1,8 @@
 /*---------------------Productos---------------------*/
 .seccion-productos{
-    border: solid 1px black;
     display: flex;
     flex-direction: column;
-    background-color: #c4c4c4;
     margin: 10px;
-    :hover{
-        
-    }
 
     .contenedor-buscador{
         display: flex;
@@ -28,7 +23,6 @@
         flex-direction: column;
         margin: 30px;
         padding: 20px;
-        background-color: #e4e1e1; 
         
         .caja-compra-productos{
             background-color: rgb(27, 27, 27);
