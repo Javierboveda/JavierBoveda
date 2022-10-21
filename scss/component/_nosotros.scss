@@ -7,8 +7,6 @@
         border: solid 1px black;
         display: flex;
         margin: 5px;
-        background-color: rgb(231, 231, 231);
-        border: solid 3px yellow;
         /* -------------- MEDIA QUERIES TABLET -------------- */    
         @media only screen and (max-width: 850px) and (min-width: 400px) {
             display: flex;
@@ -21,7 +19,8 @@
         }
         .descripcion{
             width: 30%;
-            border: solid 2px blue;
+            color: white;
+            background-color: black;
             /* -------------- MEDIA QUERIES TABLET -------------- */    
             @media only screen and (max-width: 850px) and (min-width: 400px) {
                 width: 100%;
@@ -37,6 +36,10 @@
                 padding: 5px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: center;
+                color: white;
+                -webkit-text-stroke: 2px #a38903;
+                
+                
             }
             #descripcion-nosotros{
                 display: flex;
