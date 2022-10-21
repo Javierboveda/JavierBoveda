@@ -734,7 +734,7 @@ section .articulos .articulo-1 .cajas p {
 .main-registrarse {
   display: flex;
   justify-content: center;
-  background-color: #8f2424;
+  background-color: #ffffff;
 }
 .main-registrarse .seccion-registrarse {
   width: 75%;
