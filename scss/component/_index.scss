@@ -24,6 +24,8 @@ section{
             display: flex;
             justify-content: space-around ;
             background-color: rgb(196, 194, 194);
+            
+            /*------------ MEDIA QUERIES SMARTPHONE -----------*/ 
             @media only screen and (max-width: 400px){
                     flex-direction: column;
                     align-items: center;    

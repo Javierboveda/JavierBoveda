@@ -412,6 +412,7 @@ section .articulos .articulo-1 {
   display: flex;
   justify-content: space-around;
   background-color: rgb(196, 194, 194);
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
 @media only screen and (max-width: 400px) {
   section .articulos .articulo-1 {
@@ -499,7 +500,13 @@ section .articulos .articulo-1 .cajas p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: white;
-  -webkit-text-stroke: 2px #a38903;
+  -webkit-text-stroke: 1px #a38903;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .nosotros .sobre-nosotros .descripcion #titulo-h2 {
+    font-size: 12px;
+  }
 }
 .nosotros .sobre-nosotros .descripcion #descripcion-nosotros {
   display: flex;
@@ -574,12 +581,20 @@ section .articulos .articulo-1 .cajas p {
   height: 100px;
   margin: 3px;
   /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
 @media only screen and (max-width: 850px) and (min-width: 450px) {
   .seccion-productos .seccion-compra-productos .caja-compra-productos {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 250px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 300px;
   }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-compra-productos {
@@ -598,9 +613,15 @@ section .articulos .articulo-1 .cajas p {
   justify-content: center;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #a38903;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .nombre-compra-productos {
+    font-size: 10px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .cant-bulto-compra-productos {
   display: flex;
@@ -610,9 +631,15 @@ section .articulos .articulo-1 .cajas p {
   align-items: center;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #a38903;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .cant-bulto-compra-productos {
+    font-size: 10px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .cant-unidad-compra-productos {
   display: flex;
@@ -622,9 +649,15 @@ section .articulos .articulo-1 .cajas p {
   align-items: center;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #a38903;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .cant-unidad-compra-productos {
+    font-size: 10px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos {
   display: flex;
@@ -645,15 +678,21 @@ section .articulos .articulo-1 .cajas p {
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   align-items: center;
   margin: auto auto;
   /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
 @media only screen and (max-width: 850px) and (min-width: 450px) {
   .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos p {
     font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .disponible-compra-productos p {
+    font-size: 8px;
   }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos {
@@ -674,13 +713,19 @@ section .articulos .articulo-1 .cajas p {
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   align-items: center;
   margin: auto auto;
   /* -------------- MEDIA QUERIES TABLET -------------- */
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
 @media only screen and (max-width: 850px) and (min-width: 450px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
   .seccion-productos .seccion-compra-productos .caja-compra-productos .no-disponible-compra-productos p {
     font-size: 8px;
   }
@@ -703,7 +748,13 @@ section .articulos .articulo-1 .cajas p {
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra p {
   margin: auto auto;
-  font-size: 16px;
+  font-size: 14px;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .selector-compra-productos .selector-unidad-compra p {
+    font-size: 10px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .input-compra-productos {
   display: flex;
@@ -726,14 +777,26 @@ section .articulos .articulo-1 .cajas p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: white;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .precio-compra-productos {
+    font-size: 12px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin: auto;
   height: 80%;
   width: 80%;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito {
+    grid-column: 1/3;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button {
   display: flex;
@@ -741,6 +804,12 @@ section .articulos .articulo-1 .cajas p {
   justify-content: center;
   width: 60px;
   height: 40px;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button {
+    width: 100px;
+  }
 }
 .seccion-productos .seccion-compra-productos .caja-compra-productos .img-carrito button img {
   width: 20px;
