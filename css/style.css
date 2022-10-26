@@ -55,6 +55,15 @@ header .encabezado .logo-kiosquito {
   max-height: 100px;
   /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
+@media only screen and (max-width: 400px) {
+  header .encabezado .logo-kiosquito {
+    display: grid;
+    grid-column: 1/2;
+    margin: auto auto;
+    width: auto;
+    max-height: 100px;
+  }
+}
 header .encabezado .logo-kiosquito img {
   max-height: 94px;
   width: auto;
@@ -64,15 +73,6 @@ header .encabezado .logo-kiosquito img {
   header .encabezado .logo-kiosquito img {
     max-height: 94px;
     width: auto;
-  }
-}
-@media only screen and (max-width: 400px) {
-  header .encabezado .logo-kiosquito {
-    display: grid;
-    grid-column: 1/2;
-    margin: auto auto;
-    width: auto;
-    max-height: 100px;
   }
 }
 header .encabezado .titulo {
@@ -113,15 +113,6 @@ header .encabezado .redes {
   /* -------------- MEDIA QUERIES TABLET -------------- */
   /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 }
-header .encabezado .redes li {
-  display: flex;
-  margin: 1 auto;
-}
-header .encabezado .redes li img {
-  margin: auto;
-  width: 30px;
-  height: 30px;
-}
 @media only screen and (max-width: 850px) and (min-width: 400px) {
   header .encabezado .redes {
     display: grid;
@@ -140,6 +131,15 @@ header .encabezado .redes li img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+header .encabezado .redes li {
+  display: flex;
+  margin: 1 auto;
+}
+header .encabezado .redes li img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
 header .encabezado .ingresar {
   display: flex;
   justify-content: center;
@@ -149,12 +149,20 @@ header .encabezado .ingresar {
 }
 header .encabezado .ingresar button {
   height: 40px;
-  min-width: 100px;
-  border: solid 2px black;
+  max-width: 100px;
+  padding: 10px;
   border-radius: 10px;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: radial-gradient(circle, rgb(241, 241, 241) 36%, rgb(220, 220, 227) 57%, rgb(181, 181, 181) 100%);
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  header .encabezado .ingresar button {
+    max-width: 60px;
+    font-size: 10px;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 850px) and (min-width: 400px) {
   header .encabezado .ingresar {
@@ -291,6 +299,12 @@ footer ul li {
   margin: 3px;
   width: 90%;
   height: 35px;
+  /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+}
+@media only screen and (max-width: 400px) {
+  footer ul li .email {
+    font-size: 6px;
+  }
 }
 footer ul li a {
   display: flex;
@@ -400,10 +414,9 @@ section .articulos .articulo-1 {
   background-color: rgb(196, 194, 194);
 }
 @media only screen and (max-width: 400px) {
-  section .articulos .articulo-1 .articulo-1 {
+  section .articulos .articulo-1 {
     flex-direction: column;
     align-items: center;
-    background-color: rgb(196, 194, 194);
   }
 }
 section .articulos .articulo-1 .cajas {

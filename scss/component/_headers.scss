@@ -42,6 +42,15 @@ header{
             margin: auto auto;
             width: auto;
             max-height: 100px;
+            /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+            @media only screen and (max-width: 400px){
+                display: grid;
+                grid-column: 1 / 2;
+                margin: auto auto;
+                width: auto;
+                max-height: 100px;
+            }
+
             img{
                 max-height: 94px;
                 width: auto;   
@@ -50,14 +59,6 @@ header{
                     max-height: 94px;
                     width: auto; 
                 }
-            }
-            /*------------ MEDIA QUERIES SMARTPHONE -----------*/
-            @media only screen and (max-width: 400px){
-                display: grid;
-                grid-column: 1 / 2;
-                margin: auto auto;
-                width: auto;
-                max-height: 100px;
             }
         }
 
@@ -96,17 +97,6 @@ header{
             list-style-type: none;
             grid-column: 4 / 6;
             grid-template-columns: 1fr 1fr 1fr;
-
-            li{
-                display: flex;
-                margin: 1 auto;
-
-                img{
-                    margin: auto;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
             /* -------------- MEDIA QUERIES TABLET -------------- */  
             @media only screen and (max-width: 850px) and (min-width: 400px) {
                 display: grid;
@@ -123,21 +113,36 @@ header{
                 grid-row: 2;
                 grid-template-columns: 1fr 1fr 1fr;
             }
+
+            li{
+                display: flex;
+                margin: 1 auto;
+                img{
+                    margin: auto;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
         }
         /*acceso a ingresar*/
         .ingresar{
             display: flex;
             justify-content: center;
             align-items: center;
-
             button{
                 height: 40px;
-                min-width: 100px;
-                border: solid 2px black;
+                max-width: 100px;
+                padding: 10px;
                 border-radius: 10px;
                 color: black;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 background: radial-gradient(circle, rgba(241,241,241,1) 36%, rgba(220,220,227,1) 57%, rgba(181,181,181,1) 100%);
+                /*------------ MEDIA QUERIES SMARTPHONE -----------*/
+                @media only screen and (max-width: 400px){
+                    max-width: 60px; 
+                    font-size: 10px;
+                    padding: 0;
+                }
             }
             /* -------------- MEDIA QUERIES TABLET -------------- */  
             @media only screen and (max-width: 850px) and (min-width: 400px) {
