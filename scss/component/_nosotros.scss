@@ -1,7 +1,7 @@
 /*---------------------Nosotros---------------------*/
 .nosotros{
     display: flex;
-    background-color: #c4c4c4;
+    background-color: nth($color-logo , 4 );
 
     .sobre-nosotros{
         border: solid 1px black;
@@ -20,7 +20,7 @@
 
         .descripcion{
             width: 30%;
-            color: white;
+            color: nth($color-logo, 3 );
             background-color: black;
             /* -------------- MEDIA QUERIES TABLET -------------- */    
             @media only screen and (max-width: 850px) and (min-width: 400px) {
