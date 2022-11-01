@@ -1,7 +1,8 @@
+@import '../base/listas';
 /*---------------------Nosotros---------------------*/
 .nosotros{
     display: flex;
-    background-color: nth($color-logo , 4 );
+    background-color: nth($color-logo , 2 );
 
     .sobre-nosotros{
         border: solid 1px black;
@@ -20,7 +21,7 @@
 
         .descripcion{
             width: 30%;
-            color: nth($color-logo, 3 );
+            color: nth($color-logo , 2 );
             background-color: black;
             /* -------------- MEDIA QUERIES TABLET -------------- */    
             @media only screen and (max-width: 850px) and (min-width: 400px) {
@@ -37,8 +38,8 @@
                 padding: 5px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: center;
-                color: white;
-                -webkit-text-stroke: 1px #a38903;
+                color: nth($color-logo , 2 );
+                -webkit-text-stroke: 1px nth($color-logo , 1 );
                 /*------------ MEDIA QUERIES SMARTPHONE -----------*/
                 @media only screen and (max-width: 400px){
                     font-size: 12px;
