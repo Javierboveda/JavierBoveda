@@ -2,7 +2,7 @@
 
 /*FOOTER*/
 footer{
-    background: linear-gradient( rgb(255, 255, 255),rgb(0, 0, 0),);
+    background: linear-gradient( nth($color-logo , 2 ),nth($color-logo , 3 ),);
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ footer{
                 text-decoration: none;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 14px;
-                color: black;
+                color: nth($color-logo , 3 );
                 
                 /*------------ MEDIA QUERIES SMARTPHONE -----------*/
 
@@ -50,7 +50,7 @@ footer{
                 }
             }
             a:hover{
-                color: #a38903;
+                color: nth($color-logo , 1 );
             }
         }
     }

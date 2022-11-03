@@ -281,7 +281,7 @@ header .nav .ul-nav li a:link { /*estilo para enlaces NO visitados*/
 /*COLORES DEL LOGO*/
 /*FOOTER*/
 footer {
-  background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+  background: linear-gradient(white, black);
   width: 100%;
   display: flex;
   align-items: center;
@@ -332,6 +332,7 @@ footer ul li a:hover {
   color: #a38903;
 }
 
+/*COLORES DEL LOGO*/
 /*---------------------Contactanos---------------------*/
 .seccion-contactarnos {
   background-image: url(../Imagenes/Local-interior.jpg);
@@ -350,7 +351,7 @@ footer ul li a:hover {
 .seccion-contactarnos .articulo-datos {
   display: flex;
   align-items: center;
-  background-color: #e4e1e1;
+  background-color: white;
   width: 400px;
   height: 400px;
   padding: 15px;
@@ -366,7 +367,7 @@ footer ul li a:hover {
 }
 .seccion-contactarnos .articulo-datos .tabla-datos tr td {
   border: solid 1px black;
-  background-color: rgba(231, 226, 226, 0.918);
+  background-color: #c4c4c4;
   padding: 5px;
   /* -------------- MEDIA QUERIES TABLET & SMARTPHONE-------------- */
 }
